@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 1fr;
+    grid-template-areas: "header header header" "pic1 pic2 pic3" "pic4 pic5 pic6" "footer footer footer";
+    height: 100vh;
+    margin: 2em;
+
+}
+
+header {
+    grid-area: header;
+    background: #2600ff;
+}
+
+section.pic1 {
+    grid-area: pic1;
+    background: yellow;
+}
+section.pic2 {
+    grid-area: pic2;
+    background: purple;
+}
+section.pic3 {
+    grid-area: pic3;
+    background: red;
+}
+section.pic4 {
+    grid-area: pic4;
+    background: rgb(20, 34, 130);
+}
+section.pic5 {
+    grid-area: pic5;
+    background: palegreen;
+}
+section.pic6 {
+    grid-area: pic6;
+    background: orange;
+}
+
+footer {
+    grid-area: footer;
+    background: 
+    #624163;
+}
+
